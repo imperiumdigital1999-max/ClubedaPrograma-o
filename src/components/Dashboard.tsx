@@ -38,7 +38,7 @@ export default function Dashboard({ onToolSelect, onViewChange }: DashboardProps
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
               Bem-vindo ao{' '}
               <span className="bg-gradient-to-r from-orange-500 to-cyan-500 bg-clip-text text-transparent">
-                Clube das IAs
+                Clube da Programação
               </span>
             </h1>
             <p className="text-slate-200 text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
