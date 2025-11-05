@@ -9,7 +9,7 @@ interface FavoritesViewProps {
 }
 
 export default function FavoritesView({ onToolSelect }: FavoritesViewProps) {
-  // Filtrar ferramentas em destaque
+  // Filtrar cursos (ferramentas marcadas como featured)
   const featuredTools = aiTools.filter(tool => tool.featured);
 
   return (
@@ -17,8 +17,8 @@ export default function FavoritesView({ onToolSelect }: FavoritesViewProps) {
       <div className="flex items-center space-x-3 mb-8">
         <Award className="w-8 h-8 text-orange-500" />
         <div>
-          <h1 className="text-3xl font-bold text-white">Ferramentas em Destaque</h1>
-          <p className="text-slate-400 mt-1">As melhores ferramentas de IA selecionadas pela nossa equipe</p>
+          <h1 className="text-3xl font-bold text-white">Cursos</h1>
+          <p className="text-slate-400 mt-1">Os melhores cursos selecionados pela nossa equipe</p>
         </div>
       </div>
 
@@ -32,10 +32,10 @@ export default function FavoritesView({ onToolSelect }: FavoritesViewProps) {
         <div className="text-center py-12">
           <Award className="w-16 h-16 text-slate-600 mx-auto mb-4" />
           <div className="text-slate-500 text-lg mb-4">
-            Nenhuma ferramenta em destaque encontrada
+            Nenhum curso encontrado
           </div>
           <p className="text-slate-600">
-            Ferramentas em destaque são selecionadas pela nossa equipe
+            Cursos são selecionados pela nossa equipe
           </p>
         </div>
       )}
