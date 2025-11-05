@@ -46,7 +46,7 @@ export default function Header({ currentView, onViewChange, onMenuToggle }: Head
                     : 'text-slate-400 hover:text-white hover:bg-slate-800'
                 }`}
               >
-                Categorias
+                IAs
               </button>
               <button
                 onClick={() => onViewChange('favorites')}
@@ -56,7 +56,7 @@ export default function Header({ currentView, onViewChange, onMenuToggle }: Head
                     : 'text-slate-400 hover:text-white hover:bg-slate-800'
                 }`}
               >
-                Em Destaque
+                Cursos
               </button>
               <button
                 onClick={() => onViewChange('recent')}
@@ -66,7 +66,7 @@ export default function Header({ currentView, onViewChange, onMenuToggle }: Head
                     : 'text-slate-400 hover:text-white hover:bg-slate-800'
                 }`}
               >
-                Recentes
+                Programming
               </button>
             </div>
           </div>
