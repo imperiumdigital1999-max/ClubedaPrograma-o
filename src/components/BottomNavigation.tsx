@@ -10,9 +10,9 @@ interface BottomNavigationProps {
 export default function BottomNavigation({ currentView, onViewChange }: BottomNavigationProps) {
   const navItems = [
     { id: 'dashboard' as ViewMode, label: 'Dashboard', icon: Home },
-    { id: 'categories' as ViewMode, label: 'Categorias', icon: Folder },
-    { id: 'favorites' as ViewMode, label: 'Destaque', icon: Award },
-    { id: 'recent' as ViewMode, label: 'Recentes', icon: Clock },
+    { id: 'categories' as ViewMode, label: 'IAs', icon: Folder },
+    { id: 'favorites' as ViewMode, label: 'Cursos', icon: Award },
+    { id: 'recent' as ViewMode, label: 'Programming', icon: Clock },
   ];
 
   return (
