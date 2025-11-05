@@ -17,7 +17,7 @@ function App() {
 
   const handleViewChange = (view: ViewMode) => {
     setCurrentView(view);
-    if (view === 'dashboard') {
+    if (view === 'dashboard' || view === 'ias' || view === 'cursos' || view === 'programming') {
       setSelectedCategory('');
       setSelectedTool(null);
     }
@@ -38,7 +38,7 @@ function App() {
     setSelectedTool(null);
     // Volta para a view anterior (categoria, favoritas, etc.)
     if (selectedCategory) {
-      setCurrentView('category');
+      setCurrentView('ia-detail');
     } else {
       setCurrentView('dashboard');
     }
@@ -53,9 +53,9 @@ function App() {
             onBack={handleBackFromTool}
           />
         ) : null;
-      case 'categories':
+      case 'ias':
         return <CategoriesView onToolSelect={handleToolSelect} />;
-      case 'category':
+      case 'ia-detail':
         return (
           <CategoryView
             categoryId={selectedCategory}
@@ -63,9 +63,9 @@ function App() {
             onToolSelect={handleToolSelect}
           />
         );
-      case 'favorites':
+      case 'cursos':
         return <FavoritesView onToolSelect={handleToolSelect} />;
-      case 'recent':
+      case 'programming':
         return <RecentView onToolSelect={handleToolSelect} />;
       default:
         return <Dashboard onToolSelect={handleToolSelect} onViewChange={handleViewChange} />;

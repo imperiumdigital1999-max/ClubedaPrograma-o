@@ -39,9 +39,9 @@ export default function Header({ currentView, onViewChange, onMenuToggle }: Head
                 Dashboard
               </button>
               <button
-                onClick={() => onViewChange('categories')}
+                onClick={() => onViewChange('ias')}
                 className={`px-4 py-2 rounded-lg transition-colors font-medium ${
-                  currentView === 'categories'
+                  currentView === 'ias'
                     ? 'bg-gradient-to-r from-orange-500 to-cyan-500 text-white'
                     : 'text-slate-400 hover:text-white hover:bg-slate-800'
                 }`}
@@ -49,9 +49,9 @@ export default function Header({ currentView, onViewChange, onMenuToggle }: Head
                 IAs
               </button>
               <button
-                onClick={() => onViewChange('favorites')}
+                onClick={() => onViewChange('cursos')}
                 className={`px-4 py-2 rounded-lg transition-colors font-medium ${
-                  currentView === 'favorites'
+                  currentView === 'cursos'
                     ? 'bg-gradient-to-r from-orange-500 to-cyan-500 text-white'
                     : 'text-slate-400 hover:text-white hover:bg-slate-800'
                 }`}
@@ -59,9 +59,9 @@ export default function Header({ currentView, onViewChange, onMenuToggle }: Head
                 Cursos
               </button>
               <button
-                onClick={() => onViewChange('recent')}
+                onClick={() => onViewChange('programming')}
                 className={`px-4 py-2 rounded-lg transition-colors font-medium ${
-                  currentView === 'recent'
+                  currentView === 'programming'
                     ? 'bg-gradient-to-r from-orange-500 to-cyan-500 text-white'
                     : 'text-slate-400 hover:text-white hover:bg-slate-800'
                 }`}

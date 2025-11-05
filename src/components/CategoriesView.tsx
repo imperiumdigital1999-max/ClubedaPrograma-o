@@ -120,10 +120,10 @@ export default function CategoriesView({ onToolSelect }: CategoriesViewProps) {
         // Exibir cards das categorias
         <>
           <div className="flex items-center space-x-3 mb-8">
-            <Folder className="w-8 h-8 text-purple-500" />
+            <Folder className="w-8 h-8 text-cyan-500" />
             <div>
-              <h1 className="text-3xl font-bold text-white">Categorias</h1>
-              <p className="text-slate-400 mt-1">Escolha uma categoria para explorar as ferramentas</p>
+              <h1 className="text-3xl font-bold text-white">IAs Disponíveis</h1>
+              <p className="text-slate-400 mt-1">Escolha uma categoria de IA para explorar as ferramentas</p>
             </div>
           </div>
 
@@ -205,7 +205,7 @@ export default function CategoriesView({ onToolSelect }: CategoriesViewProps) {
                 onClick={handleBackToCategories}
                 className="bg-gradient-to-r from-orange-500 to-cyan-500 text-white px-6 py-2 rounded-lg hover:from-orange-600 hover:to-cyan-600 transition-all duration-300"
               >
-                Voltar às Categorias
+                Voltar às IAs
               </button>
             </div>
           )}
