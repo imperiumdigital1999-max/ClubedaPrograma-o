@@ -19,7 +19,7 @@ export default function Header({ currentView, onViewChange, onMenuToggle }: Head
                 <span className="text-white font-bold text-sm">CI</span>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-white">Clube das IAs</h1>
+                <h1 className="text-xl font-bold text-white">Clube da Programação</h1>
                 <p className="text-xs text-slate-400 hidden sm:block">Hub Premium de Ferramentas</p>
               </div>
             </div>
